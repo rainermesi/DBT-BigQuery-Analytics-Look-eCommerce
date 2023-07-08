@@ -1,0 +1,5 @@
+name: look_ecommerce_analytics_marts
+version: '1.0.0'
+profile: default
+source-paths: ["models"]
+target-path: "target"
