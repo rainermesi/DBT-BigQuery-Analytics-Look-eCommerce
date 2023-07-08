@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "dbt-bigquery-analytics-look-ecommerce"
+version = "0.1.0"
+description = "DBT and BigQuery analytics project"
+authors = ["Rainer Mesi"]
+license = "MIT"
+readme = "README.md"
+packages = [{include = "dbt_bigquery_analytics_look_ecommerce"}]
+
+[tool.poetry.dependencies]
+python = "^3.7"
+dbt-bigquery = "^1.5.3"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
