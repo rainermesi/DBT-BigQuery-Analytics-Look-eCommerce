@@ -1,0 +1,4 @@
+tmp/keyfile.json
+logs/dbt.log
+dbt/logs/dbt.log
+dbt/look_ecommerce_analytics/.user.yml
