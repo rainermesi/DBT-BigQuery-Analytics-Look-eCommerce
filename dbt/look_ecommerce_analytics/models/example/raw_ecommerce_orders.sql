@@ -1,4 +1,4 @@
 SELECT
     *
 FROM {{ source('thelook_source', 'orders') }}
-LIMIT 1
+LIMIT 5
