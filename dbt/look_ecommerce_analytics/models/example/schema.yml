@@ -2,20 +2,60 @@
 version: 2
 
 models:
-  - name: my_first_dbt_model
-    description: "A starter dbt model"
+
+  - name: raw_ecommerce_orders
+    description: "Raw model ingesting orders data"
     columns:
-      - name: id
-        description: "The primary key for this table"
+      - name: order_id
+        description: "Unique order ID"
         tests:
           - unique
           - not_null
-
-  - name: my_second_dbt_model
-    description: "A starter dbt model"
+  - name: raw_ecommerce_distribution_centers
+    description: "Raw model storing distribution centers"
     columns:
       - name: id
-        description: "The primary key for this table"
+        description: "Unique distribution center key"
+        tests:
+          - unique
+          - not_null
+  - name: raw_ecommerce_events
+    description: "Raw model ingesting all ecommerce events"
+    columns:
+      - name: id
+        description: "Unique event ID"
+        tests:
+          - unique
+          - not_null
+  - name: raw_ecommerce_inventory_items
+    description: "Raw model storing all inventory items"
+    columns:
+      - name: id
+        description: "Unique inventory item ID"
+        tests:
+          - unique
+          - not_null
+  - name: raw_ecommerce_order_items
+    description: "Raw model storing all order items"
+    columns:
+      - name: id
+        description: "Unique order item ID"
+        tests:
+          - unique
+          - not_null
+  - name: raw_ecommerce_products
+    description: "Raw model storing all products"
+    columns:
+      - name: id
+        description: "Unique product ID"
+        tests:
+          - unique
+          - not_null
+  - name: raw_ecommerce_users
+    description: "Raw model storing all users"
+    columns:
+      - name: id
+        description: "Unique user ID"
         tests:
           - unique
           - not_null
