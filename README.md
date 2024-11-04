@@ -1,15 +1,30 @@
-# DBT-BigQuery-Analytics-Look-eCommerce
-Analytics project that uses DBT (Data Build Tool) and BigQuery to analyze the Look eCommerce dataset
+# DBT-BigQuery-Simple-Setup
 
-The Look eCommerce dataset is a fictitious eCommerce clothing site developed by the Looker team, containing information about customers, products, orders, logistics, web events, and digital marketing campaigns.
+This project sets up a basic data pipeline using **DBT** (Data Build Tool) and **BigQuery**. The goal is to demonstrate a simple workflow for data extraction, transformation, and loading (ETL) in BigQuery, entirely managed and executed within GitHub.
 
-This project, aims to design and implement a comprehensive data model using the DBT framework and BigQuery. The data model will follow a Star Schema structure, to enable efficient analysis and reporting on various aspects of the eCommerce business.
+## Project Overview
 
-Key Objectives:
+- **Basic Setup**: Reads data from a BigQuery source dataset and writes transformations back to a target dataset.
+- **Raw Layer Models**: Uses DBT to create foundational `raw` models, demonstrating a minimal transformation setup.
 
-* Extract and transform the Look eCommerce dataset using SQL and Python.
-* Utilize DBT to manage the data transformation process, creating structured and reliable data models.
-* Implement a Star Schema to capture essential business dimensions, such as customers, products, orders, and web events.
-* Build a series of DBT models to populate the data warehouse in BigQuery and enable comprehensive analysis.
-* Develop SQL queries and reports to uncover insights into sales trends, customer behavior, marketing campaign effectiveness, and more.
-* Include thorough documentation explaining the project's objectives, data model design, and instructions for running and reproducing the analyses.
+## Key Features
+
+1. **GitHub as a Development Environment**:
+   - Configured using GitHub’s in-browser VS Code editor.
+   - Includes a Poetry environment to manage dependencies, activated directly in the GitHub editor.
+
+2. **Credential Automation**:
+   - A shell script automates service account authentication by writing a temporary key file to the environment.
+
+3. **Running DBT in GitHub**:
+   - DBT models can be built and transformations executed directly within the GitHub setup.
+
+## Usage
+
+1. Clone the repository and open it in GitHub's VS Code editor.
+2. Activate the Poetry environment for DBT.
+3. Run the shell script to generate credentials, then execute DBT commands to load and transform data in BigQuery.
+
+---
+
+This repository offers a streamlined approach for managing basic DBT workflows in GitHub. 
