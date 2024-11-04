@@ -19,12 +19,12 @@ This project sets up a basic data pipeline using **DBT** (Data Build Tool) and *
 3. **Running DBT in GitHub**:
    - DBT models can be built and transformations executed directly within the GitHub setup.
 
-## Usage
+## Potential Usage (see note)
+
+> [!NOTE]
+> Valid Github secrets and corresponding datasets need to be created beforehand,
+> which is outside the scope of this repo.
 
 1. Clone the repository and open it in GitHub's VS Code editor.
 2. Activate the Poetry environment for DBT.
-3. Run the shell script to generate credentials, then execute DBT commands to load and transform data in BigQuery.
-
----
-
-This repository offers a streamlined approach for managing basic DBT workflows in GitHub. 
+3. Run the shell script to generate credential keyfile, then execute DBT commands to load and transform data in BigQuery.
